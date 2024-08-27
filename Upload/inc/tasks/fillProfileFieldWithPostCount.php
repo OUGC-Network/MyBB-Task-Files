@@ -28,7 +28,9 @@
 
 declare(strict_types=1);
 
-const OUGC_FILL_PROFILE_FIELDS_WITH_POST_COUNT_TASK_SETTINGS = [
+use const ougc\Tasks\FillProfileFieldWithPostCount\SETTINGS;
+
+define('ougc\Tasks\FillProfileFieldWithPostCount\SETTINGS', [
     'profileFields' => [
         // where 0 is the custom profile field identified (fid)
         0 => [
@@ -42,7 +44,7 @@ const OUGC_FILL_PROFILE_FIELDS_WITH_POST_COUNT_TASK_SETTINGS = [
             'queryLimit' => 50
         ]
     ]
-];
+]);
 
 function task_ougcSubscriptions(array &$taskData)
 {
@@ -52,7 +54,7 @@ function task_ougcSubscriptions(array &$taskData)
 
     $profileFieldsCacheData = $mybb->cache->read('profilefields');
 
-    $taskSettings = OUGC_FILL_PROFILE_FIELDS_WITH_POST_COUNT_TASK_SETTINGS;
+    $taskSettings = SETTINGS;
 
     foreach ($taskSettings['profileFields'] as $profileFieldID => $fieldSettings) {
         if (empty($profileFieldID) || empty($profileFieldsCacheData[$profileFieldID])) {
