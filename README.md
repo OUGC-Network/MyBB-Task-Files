@@ -34,7 +34,7 @@ The following information will assist you into getting a copy of each task up an
 
 ### Dependencies <a name = "dependencies"></a>
 
-A setup that meets the following requirements is necessary or recommended to use this plugin.
+A setup that meets the following requirements is necessary or recommended to use these tasks.
 
 - [MyBB](https://mybb.com/) >= 1.8
 - PHP >= 7
@@ -50,7 +50,7 @@ A setup that meets the following requirements is necessary or recommended to use
 
 ### Installing <a name = "install"></a>
 
-Follow the next steps in order to install a copy of this plugin on your forum.
+Follow the next steps in order to install a copy of each task on your forum.
 
 1. Download the latest files for each task file.
 2. Upload each task file to the MyBB task directory `/inc/tasks/`.
@@ -58,7 +58,7 @@ Follow the next steps in order to install a copy of this plugin on your forum.
 
 ### Updating <a name = "update"></a>
 
-Follow the next steps in order to update your copy of this plugin.
+Follow the next steps in order to update your copy of each task.
 
 1. Follow step 1 to 3 from the [Install](#install) section.
 
@@ -66,7 +66,7 @@ Follow the next steps in order to update your copy of this plugin.
 
 ## 🛠 Settings <a name = "settings"></a>
 
-Below you can find a description of the plugin settings.
+Below you can find a description of each task settings.
 
 ### Fill Profile Field With Post Count <a name = "settings_fill_profile_field_with_post_count"></a>
 
@@ -92,8 +92,11 @@ define('ougc\Tasks\FillProfileFieldWithPostCount\SETTINGS', [
 
 ## 📖 Usage <a name="usage"></a>
 
-This plugin has no additional configurations; after activating make sure to modify the global settings in order to get
-this plugin working.
+Configure your tasks from _Tools & Maintenance » Task Manager_. It is possible to host multiple copies of the same task
+by simply copying each task file with a new file name.
+
+For more information refer to
+the [official MyBB Documentation section for the Task Manager system](https://docs.mybb.com/1.8/administration/task-manager/).
 
 [Go up to Table of Contents](#table_of_contents)
 
