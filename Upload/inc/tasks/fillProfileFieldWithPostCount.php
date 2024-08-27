@@ -32,7 +32,7 @@ use const ougc\Tasks\FillProfileFieldWithPostCount\SETTINGS;
 
 define('ougc\Tasks\FillProfileFieldWithPostCount\SETTINGS', [
     'profileFields' => [
-        // where 0 is the custom profile field identified (fid)
+        // where 0 is the custom profile field identifier (fid)
         0 => [
             'forumIDs' => [1, 2],// forum identifiers (fid)
             'visible' => [1], // 1 for visible posts
